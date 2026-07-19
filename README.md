@@ -75,3 +75,142 @@ void loop() {
   // put your main code here, to run repeatedly:
 
 }
+
+## 02-05.ino
+int age = 25, height = 180, weight = 75; 
+void setup() {
+  Serial.begin(9600);
+  int age, height, weight; 
+  Serial.print("Age = "); 
+  Serial.println(age); 
+  Serial.print("Height = "); 
+  Serial.println(height); 
+  Serial.print("Weight = ");
+  Serial.println(weight);
+}
+void loop() {
+  // put your main code here, to run repeatedly:
+}
+
+## 02-06.ino
+const double pi = 3.141593; 
+void setup() {
+  Serial.begin(9600);
+  double r = 12.4; 
+  double area, circum, diameter;
+  diameter = r * 2;
+  circum = 2 * pi * r;
+  area = pi * pow(r,2); 
+  Serial.print("Diameter = "); 
+  Serial.println(diameter); 
+  Serial.print("Circum = "); 
+  Serial.println(circum); 
+  Serial.print("Area = ");
+  Serial.println(area); 
+}
+void loop() {
+  
+}
+
+## 02-07.ino
+#define pi 3.141593
+void setup() {
+  Serial.begin(9600);
+  double r = 12.4;
+  double area, circum, diameter;
+  diameter = r * 2;
+  circum = 2 * pi * r;
+  area = pi * pow(r,2); 
+  Serial.print("Diameter = "); 
+  Serial.println(diameter); 
+  Serial.print("Circum = "); 
+  Serial.println(circum); 
+  Serial.print("Area = ");
+  Serial.println(area); 
+}
+void loop() {
+  // put your main code here, to run repeatedly:
+}
+
+## 02-08-01.ino
+void setup() { 
+  Serial.begin(9600); 
+  int decNum = 123;
+  int octNum = 0123;
+  int hexNum = 0xFF; 
+  Serial.print("DEC = "); 
+  Serial.println(decNum); 
+  Serial.print("OCT = "); 
+  Serial.println(octNum); 
+  Serial.print("HEX = ");
+  Serial.println(hexNum); 
+} 
+void loop() {
+
+}
+
+## 02-08-02.ino
+void setup() { 
+  Serial.begin(9600); 
+  int decNum = 123;
+  int octNum = 0123;
+  int hexNum = 0xFF; 
+  Serial.print("DEC = "); 
+  Serial.println(decNum); 
+  Serial.print("OCT = "); 
+  Serial.println(octNum, OCT); 
+  Serial.print("HEX = ");
+  Serial.println(hexNum, HEX); 
+} 
+void loop() {
+
+}
+
+## 03-01.ino
+int a, b, av;
+void setup() {
+  Serial.begin(9600);
+  a = random(0,100);
+  b = random(0,100); 
+  Serial.print("a = "); 
+  Serial.println(a); 
+  Serial.print("b = "); 
+  Serial.println(b);
+  av = (a+b)/2; 
+  Serial.print("Average = ");
+  Serial.println(av); 
+} 
+void loop() {
+  
+}
+
+## 03-02.ino
+void setup() { 
+  Serial.begin(9600); 
+  int A = 12, B = 8; 
+  Serial.print("A++ = "); 
+  Serial.println(A++); 
+  Serial.print("A = "); 
+  Serial.println(A); 
+  Serial.print("++B = "); 
+  Serial.println(++B);
+}
+void loop() {
+
+}
+
+## 03-03.ino
+void setup() { 
+  Serial.begin(9600); 
+  int A = -2; 
+  Serial.print("+A = "); 
+  Serial.println(+A); 
+  Serial.print("-A = ");
+  Serial.println(-A); 
+}
+void loop() {
+
+}
+
+# continue
+เดี๋ยวผมมาทำต่อครับ รู้สึกว่าเดี๋ยวเพื่อนตามไม่ทัน 555+
